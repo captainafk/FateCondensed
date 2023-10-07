@@ -11,5 +11,17 @@ namespace FateCondensed
         public int PhysicalStress { get; set; }
         public int MentalStress { get; set; }
         public List<Aspect> Consequences { get; set; }
+        public int FatePoints { get; set; }
+
+        public void InvokeAspect(Aspect aspect)
+        {
+            ModifierBySkill[aspect.RelatedSkill] += Aspect.ModifierBonus;
+            FatePoints--;
+        }
+
+        public void EndAspect(Aspect aspect)
+        {
+            ModifierBySkill[aspect.RelatedSkill] -= Aspect.ModifierBonus;
+        }
     }
 }

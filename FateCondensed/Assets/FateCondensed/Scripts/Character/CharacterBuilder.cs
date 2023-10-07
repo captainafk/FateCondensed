@@ -14,9 +14,12 @@ namespace FateCondensed
                 Aspects = new List<Aspect>(),
                 Stunts = new List<Stunt>(),
                 ModifierBySkill = new Dictionary<Skill, int>(20),
-                Consequences = new List<Aspect>()
+                Consequences = new List<Aspect>(),
+                FatePoints = 3,
             };
         }
+
+        public CharacterBuilder(Character character) => _character = character;
 
         public CharacterBuilder AddAspect(Aspect aspect)
         {

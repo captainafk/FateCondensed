@@ -26,7 +26,6 @@ public class CharacterTestSuite
         }
     }
 
-    
     [Test]
     public void CreateCharacterWithName()
     {
@@ -88,5 +87,34 @@ public class CharacterTestSuite
         Assert.AreEqual(2, character.Stunts.Count);
     }
     
-    // TODO: Test modifiers with stunts and aspects
+    [Test]
+    public void ModifySkillsWithInvokingAspects()
+    {
+        var archery = ScriptableObject.CreateInstance<Skill>();
+        archery.SkillName = "Archery";
+        
+        _listOfScriptableObjects.Add(archery);
+        
+        var archeryAspect = new Aspect
+        {
+            Name = "Master of Longbows",
+            RelatedSkill = archery
+        };
+
+        var character = _characterBuilder
+            .InitializeSkills(new List<Skill> { archery })
+            .AddAspect(archeryAspect)
+            .Build();
+
+        Assert.AreEqual(3, character.FatePoints);
+        
+        character.InvokeAspect(archeryAspect);
+        
+        Assert.AreEqual(2, character.ModifierBySkill[archery]);
+        Assert.AreEqual(2, character.FatePoints);
+
+        character.EndAspect(archeryAspect);
+        
+        Assert.AreEqual(0, character.ModifierBySkill[archery]);
+    }
 }
