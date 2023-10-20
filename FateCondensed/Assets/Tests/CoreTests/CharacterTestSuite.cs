@@ -117,4 +117,11 @@ public class CharacterTestSuite
         
         Assert.AreEqual(0, character.ModifierBySkill[archery]);
     }
+
+    [Test]
+    public void SimpleCharacterTakesDamage()
+    {
+        var character = _characterBuilder.Build();
+        
+    }
 }

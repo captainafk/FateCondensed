@@ -15,5 +15,6 @@
         HighConcept = 10,
         Trouble = 20,
         Relationship = 30,
+        Consequence = 40,
     }
 }

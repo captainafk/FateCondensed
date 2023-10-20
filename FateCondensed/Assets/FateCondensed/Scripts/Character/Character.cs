@@ -8,7 +8,9 @@ namespace FateCondensed
         public List<Aspect> Aspects { get; set; }
         public List<Stunt> Stunts { get; set; }
         public Dictionary<Skill, int> ModifierBySkill { get; set; }
+        public int MaxPhysicalStress { get; set; }
         public int PhysicalStress { get; set; }
+        public int MaxMentalStress { get; set; }
         public int MentalStress { get; set; }
         public List<Aspect> Consequences { get; set; }
         public int FatePoints { get; set; }

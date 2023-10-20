@@ -16,7 +16,12 @@ namespace FateCondensed
                 ModifierBySkill = new Dictionary<Skill, int>(20),
                 Consequences = new List<Aspect>(),
                 FatePoints = 3,
+                MaxPhysicalStress = 3,
+                MaxMentalStress = 3,
             };
+
+            _character.PhysicalStress = _character.MaxPhysicalStress;
+            _character.MentalStress = _character.MaxMentalStress;
         }
 
         public CharacterBuilder(Character character) => _character = character;
