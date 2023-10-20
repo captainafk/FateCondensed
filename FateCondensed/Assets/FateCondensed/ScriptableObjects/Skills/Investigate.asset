@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b4495b05c04c299cc610300fc8e96c, type: 3}
+  m_Name: Investigate
+  m_EditorClassIdentifier: 
+  SkillName: Investigate
+  Description: 'Deliberate, careful study and puzzling out mysteries. Use this
+
+    to
+    piece together clues or reconstruct a crime scene. Investigate stunts help you
+    form brilliant deductions or piece together information more quickly.'

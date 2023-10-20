@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b4495b05c04c299cc610300fc8e96c, type: 3}
+  m_Name: Resources
+  m_EditorClassIdentifier: 
+  SkillName: Resources
+  Description: "Access to material things, not just money or direct ownership. It
+    might reflect your ability to borrow from friends or dip into an organization\u2019s
+    armory. Resources stunts let you use Resources in place of Rapport or Contacts
+    or give you extra free invokes when you pay for the best."
